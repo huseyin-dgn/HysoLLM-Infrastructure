@@ -12,6 +12,10 @@ Bu altyapı, modern ML projelerinde ihtiyaç duyulan temel bileşenleri tek çat
 - 🧾 Config yönetimi (YAML/JSON + CLI override)  
 - 📁 Harici config dosyaları (configs/)  
 
+---
+## **🚀 Kullanım Örneği**
+
+- Aşağıda HysoLLM bileşenlerinin birlikte nasıl çalıştığını gösteren gerçek bir örnek bulunmaktadır.
 Amaç:  
 **Model kodunu eğitim mekanizmalarından tamamen ayırarak**, farklı projelerde yeniden kullanılabilir, düzenli ve sürdürülebilir bir yapı oluşturmak.
 ```python
@@ -161,12 +165,6 @@ trainer.fit(
 logger.info("Eğitim tamamlandı.")
 
 ```
----
-🚀 Kullanım Örneği
-
-Aşağıda HysoLLM bileşenlerinin birlikte nasıl çalıştığını gösteren gerçek bir örnek bulunmaktadır.
-
-
 ---
 
 # 📁 Proje Yapısı
