@@ -20,8 +20,6 @@ Amaç:
 **Model kodunu eğitim mekanizmalarından tamamen ayırarak**, farklı projelerde yeniden kullanılabilir, düzenli ve sürdürülebilir bir yapı oluşturmak.
 ```python
 import sys
-sys.path.append(r"C:\Users\hdgn5\OneDrive\Masaüstü\hysollm")
-
 import json
 import torch
 
