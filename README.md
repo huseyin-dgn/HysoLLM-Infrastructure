@@ -79,7 +79,7 @@ set_global_seed(cfg.training.seed)
 # 3) VERİSETİNİN NEREDE DURMASI GEREKİR?
 # =====================================================================
 """
-Gerçek ve profesyonel dizin yapısı:
+Veri seti dizin yapısı:
 
 project/
    data/
@@ -87,16 +87,15 @@ project/
       val.json
       test.json
 
-Dosya formatı:
+JSON formatı:
 [
   {"src": "merhaba dünya", "tgt": "hello world"},
-  {"src": "nasılsın", "tgt": "how are you"},
-  ...
+  {"src": "nasılsın", "tgt": "how are you"}
 ]
 
-Bu format seq2seq için *standarttır* ve HysoTrainer'ın collate yapısıyla
-doğrudan uyumludur.
+Bu format seq2seq için standarttır ve HysoTrainer ile doğrudan uyumludur.
 """
+
 
 with open("data/train.json", "r", encoding="utf-8") as f:
     train_records = json.load(f)
